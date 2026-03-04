@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select tag</title>
+    <style>
+        select{
+            /* display: block;
+            background-color: khaki; */
+        }
+        div{
+            background-color: antiquewhite;
+            border: 1px solid rgb(178, 226, 180);
+        }
+    </style>
+</head>
+<body>
+    <!-- 선택 태그 -->
+     <div>
+        <select>
+        <option value="apple">사과</option>
+        <option value="banana">바나나</option>
+        <option value="orange">오렌지</option>
+        <option value="melon" selected>메론~</option>
+     </select>
+     </div>
+     
+     <!-- 여러개 선택하기(multiple) -->
+      <div>
+        <select multiple>
+        <option value="">축구</option>
+        <option value="">야구</option>
+        <option value="">농구</option>
+        <option value="">수영</option>
+        <option value="">스키</option>
+      </select>
+      </div>
+      
+      <!-- 선택을 못하게 만들기 -->
+       <div>
+        <select size="3">
+        <option value="">김밥</option>
+        <option value="">떡볶이</option>
+        <option value="" disabled>순대(품절)</option>
+        <option value="">튀김</option>
+        <option value="">어묵</option>
+       </select>
+       </div>
+       
+       <!-- 옵션들을 그룹으로 만들기 -->
+        <div>
+            <select>
+            <!-- 서울시 -->
+            <optgroup label="서울시">
+                <option value="">강남구</option>
+                <option value="">강북구</option>
+                <option value="">서초구</option>
+            </optgroup>
+            <!-- 부산시 -->
+            <optgroup label="부산시">
+                <option value="">수영구</option>
+                <option value="">해운대구</option>
+            </optgroup>
+            <!-- 대구시 -->
+            <optgroup label="대구">
+                <option value="">동구</option>
+                <option value="">서구</option>
+                <option value="">남구</option>
+                <option value="">북구</option>
+            </optgroup>
+        </select>
+        </div>
+        
+</body>
+</html>
